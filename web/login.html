@@ -26,11 +26,13 @@ LAB AMM - MILESTONE_001
         </nav><br>
         
         <h2>LOGIN PAGE</h2>
-        <form action="#" method="get"> <!-- Form di accesso all'area riservata -->
+        <form action="#" method="post"> <!-- Form di accesso all'area riservata -->
             <label for="userid">User-ID</label>
-            <input type="text" name="userid" id="userid" value="" /><br><br>
+            <input type="text" name="userid" id="userid" value="" required><br><br>
+            
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" value="" /> <br><br>
+            <input type="password" name="password" id="password" value="" required> <br><br>
+            
             <button type="reset">Reimposta</button>
             <button type="submit">Conferma dati</button>
         </form> <!-- chiusura form di accesso all'area riservata -->

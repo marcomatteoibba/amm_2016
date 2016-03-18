@@ -27,20 +27,23 @@ LAB AMM - MILESTONE_001
         <h2>AREA VENDITORE</h2>
         
         <form action="#" method="get"> <!-- Form invio immagini -->
-            <label for="image_title">Titolo immagine</label>
-            <input type="text" name="image_tile" id="image_title" value="" /><br><br>
-            <label for="image_url">URL immagine</label>
-            <input type="text" name="image_url" id="image_url" value="" /><br><br>
-            <label for="image_description">Descrizione</label>
-            <input type="text" name="image_description" id="image_description" value="" /><br><br>
-            <label for="image_prize">Prezzo</label>
-            <input type="text" name="image_prize" id="image_prize" value="" /><br><br>
-            <label for="image_number">Numero pezzi</label>
-            <input type="text" name="image_prize" id="image_number" value="" /><br><br>
+            <label for="image_title">Titolo immagine</label><br>
+            <input type="text" name="image_tile" id="image_title" value=""  size="50" required><br><br>
+            
+            <label for="image_url">URL immagine</label><br> 
+            <input type="url" name="image_url" id="image_url" value=""  size="50" required><br><br><!-- E' possibile che type="url" non abbia piena compatibilità con Safari-->
+            
+            <label for="image_description">Descrizione</label><br>
+            <input type="text" name="image_description" id="image_description" value=""  size="50"><br><br>
+            
+            <label for="image_prize">Prezzo</label><br>
+            <input type="text" name="image_prize" id="image_prize" value="" required><br><br>
+            
+            <label for="image_number">Numero pezzi</label><br>
+            <input type="text" name="image_prize" id="image_number" value="" required><br><br>
+            
             <button type="submit">Invia dati</button>
+            <button type="reset">Cancella dati</button>
         </form>  <!-- chiusura form invio immagini -->
     </body>
 </html>
-
-
-

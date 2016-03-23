@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+Università degli Studi di Cagliari - Corso di Laurea in Informatica - 
+Esame di AMM - Docente: Prof. Davide Spano - Studente: Marco Matteo Ibba matr. 65117 
+LAB AMM - MILESTONE_001
+-->
+<html>
+     <head>
+         
+        <title>AMM PhotoMarket - Fotografie d'autore | Area Venditore</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="AMM PhotoMarket | Area Riservata dei Venditori">
+        <meta name="author" content="Marco Matteo Ibba">
+    </head>
+    
+    <body>
+        <h1>AMM PhotoMarket</h1>
+        <h2>Vendita on-line di fotografie d'autore</h2>
+        
+        <nav id="main_menu"> <!-- Main menu - MENU PRINCIPALE -->
+            <ul>
+                <li><a href="descrizione.html" title="Descrizione dei servizi">Descrizione dei servizi</a></li>
+                <li><a href="cliente.html" title="Area Cliente">Area Cliente</a></li>
+                <li><a href="login.html" title="Login">Login</a></li>
+            </ul>
+        </nav><br>
+        <h2>AREA VENDITORE</h2>
+        
+        <form action="#" method="get"> <!-- Form invio immagini -->
+            <label for="image_title">Titolo immagine</label><br>
+            <input type="text" name="image_tile" id="image_title" value=""  size="50" required><br><br>
+            
+            <label for="image_url">URL immagine</label><br> 
+            <input type="url" name="image_url" id="image_url" value=""  size="50" required><br><br><!-- E' possibile che type="url" non abbia piena compatibilità con Safari-->
+            
+            <label for="image_description">Descrizione</label><br>
+            <input type="text" name="image_description" id="image_description" value=""  size="100"><br><br>
+            
+            <label for="image_prize">Prezzo</label><br>
+            <input type="text" name="image_prize" id="image_prize" value="" required><br><br>
+            
+            <label for="image_number">Numero pezzi</label><br>
+            <input type="text" name="image_prize" id="image_number" value="" required><br><br>
+            
+            <button type="submit">Invia dati</button>
+            <button type="reset">Cancella dati</button>
+        </form>  <!-- chiusura form invio immagini -->
+    </body>
+</html>
